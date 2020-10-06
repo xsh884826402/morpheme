@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4de9c501-2cb2-4eef-b3e3-b190b970265f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/datastories-semeval2017-task4/baseline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subword-nmt/generate_bpe_subword.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QANet/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/QANet/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QANet/download.sh" beforeDir="false" afterPath="$PROJECT_DIR$/QANet/download.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QANet/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/QANet/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QANet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/QANet/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn-text-classification-tf/data_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn-text-classification-tf/data_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn-text-classification-tf/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn-text-classification-tf/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn-text-classification-tf/text_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn-text-classification-tf/text_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastories-semeval2017-task4/dataset/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastories-semeval2017-task4/dataset/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastories-semeval2017-task4/models/baseline_nbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastories-semeval2017-task4/models/baseline_nbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastories-semeval2017-task4/utilities/generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/datastories-semeval2017-task4/utilities/generic.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/practice$practice.coverage" NAME="practice Coverage Results" MODIFIED="1601990976089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentencepiece" />
+    <SUITE FILE_PATH="coverage/practice$train_subword_extend_using_bpe.coverage" NAME="train_subword_extend_using_bpe Coverage Results" MODIFIED="1594609143478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$generate_data_text8_for_sp.coverage" NAME="generate_data_text8_for_sp Coverage Results" MODIFIED="1601979904189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentencepiece" />
+    <SUITE FILE_PATH="coverage/practice$train.coverage" NAME="train Coverage Results" MODIFIED="1590599069609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$train_subword_extend_using_inference.coverage" NAME="train_subword_extend_using_inference Coverage Results" MODIFIED="1594609012172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$generate_sp_subword.coverage" NAME="generate_sp_subword Coverage Results" MODIFIED="1601991278291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentencepiece" />
+    <SUITE FILE_PATH="coverage/practice$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1590455696720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$word_analogy.coverage" NAME="word_analogy Coverage Results" MODIFIED="1594534753702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Word_Analogy" />
+    <SUITE FILE_PATH="coverage/practice$train_subword_extend.coverage" NAME="train_subword_extend Coverage Results" MODIFIED="1590424163952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$practice__1_.coverage" NAME="practice (1) Coverage Results" MODIFIED="1591100521731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/subword" />
+    <SUITE FILE_PATH="coverage/practice$dataset_bulid.coverage" NAME="dataset_bulid Coverage Results" MODIFIED="1594735481653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Word_Analogy" />
+    <SUITE FILE_PATH="coverage/practice$.coverage" NAME="训练效果图 Coverage Results" MODIFIED="1594785248914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plot" />
+    <SUITE FILE_PATH="coverage/practice$gennerate_visual_vector.coverage" NAME="gennerate_visual_vector Coverage Results" MODIFIED="1593614937978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lm" />
+    <SUITE FILE_PATH="coverage/practice$run_script.coverage" NAME="run_script Coverage Results" MODIFIED="1594738572885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Word_Analogy" />
+    <SUITE FILE_PATH="coverage/practice$sp_practice.coverage" NAME="sp_practice Coverage Results" MODIFIED="1601979940906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sentencepiece" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subword-nmt/generate_bpe_subword.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sentencepiece/generate_sp_subword.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subword-nmt/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sentencepiece/practice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>light</find>
+      <find>roll</find>
+      <find>chant</find>
+      <find>endanger</find>
+      <find>type</find>
+      <find>cruc</find>
+      <find>danger</find>
+      <find>unanimous</find>
+      <find>^cruc</find>
+      <find>encoding</find>
+      <find>embedding_dim</find>
+      <find>some</find>
+      <find>Category</find>
+      <find>similarly</find>
+      <find>evaluate</find>
+      <find>num</find>
+      <find>-s</find>
+      <find>s</find>
+      <find>:</find>
+      <find>describes</find>
+      <find>inadequately</find>
+      <find>press</find>
+      <find>rank</find>
+      <find>Eval</find>
+      <find>:</find>
+      <find>:i</find>
+      <find>update</find>
+      <find>print</find>
+      <find>something</find>
+      <find>code</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>model</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/subword-nmt" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lm/train_subword.py" />
+        <option value="$PROJECT_DIR$/lm/train.py" />
+        <option value="$PROJECT_DIR$/subword/inference.py" />
+        <option value="$PROJECT_DIR$/subword-nmt/practice.py" />
+        <option value="$PROJECT_DIR$/subword-nmt/generate_bpe_subword.py" />
+        <option value="$PROJECT_DIR$/lm/train_subword_extend.py" />
+        <option value="$PROJECT_DIR$/lm/train_subword_extend_concat.py" />
+        <option value="$PROJECT_DIR$/lm/gennerate_visual_vector.py" />
+        <option value="$PROJECT_DIR$/lm/practice.py" />
+        <option value="$PROJECT_DIR$/lm/run_wordsimilarity.py" />
+        <option value="$PROJECT_DIR$/lm/word2vec.py" />
+        <option value="$PROJECT_DIR$/datastories-semeval2017-task4/models/baseline_nbow.py" />
+        <option value="$PROJECT_DIR$/subword/practice.py" />
+        <option value="$PROJECT_DIR$/subword/lstm_xsh.py" />
+        <option value="$PROJECT_DIR$/subword/data_process.py" />
+        <option value="$PROJECT_DIR$/subword/train.py" />
+        <option value="$PROJECT_DIR$/subword/test.py" />
+        <option value="$PROJECT_DIR$/subword/run_all_script.py" />
+        <option value="$PROJECT_DIR$/cnn-text-classification-tf/spilit_train_test.py" />
+        <option value="$PROJECT_DIR$/cnn-text-classification-tf/train_xsh.py" />
+        <option value="$PROJECT_DIR$/cnn-text-classification-tf/eval.py" />
+        <option value="$PROJECT_DIR$/QANet/download.sh" />
+        <option value="$PROJECT_DIR$/QANet/main.py" />
+        <option value="$PROJECT_DIR$/QANet/model.py" />
+        <option value="$PROJECT_DIR$/QANet/config.py" />
+        <option value="$PROJECT_DIR$/QANet/config_raw.py" />
+        <option value="$PROJECT_DIR$/QANet/config_bpe.py" />
+        <option value="$PROJECT_DIR$/QANet/config_infer.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/analogy.txt" />
+        <option value="$PROJECT_DIR$/lm/train_subword_extend_using_inference.py" />
+        <option value="$PROJECT_DIR$/lm/train_subword_extend_using_bpe.py" />
+        <option value="$PROJECT_DIR$/lm/data_process.py" />
+        <option value="$PROJECT_DIR$/plot/数据" />
+        <option value="$PROJECT_DIR$/plot/数据.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/temp_mopheme_analogy.txt" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/temp_morpheme_analogy_old.txt" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/mikolov_analogy" />
+        <option value="$PROJECT_DIR$/Word_Analogy/dataset_bulid.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/temp_morpheme_analogy.txt" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/morpheme_analogy.txt" />
+        <option value="$PROJECT_DIR$/Word_Analogy/word_analogy.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/run_script.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/get_all_result.py" />
+        <option value="$PROJECT_DIR$/Word_Analogy/Data/all_result.txt" />
+        <option value="$PROJECT_DIR$/plot/训练效果图.py" />
+        <option value="$PROJECT_DIR$/data/test_data_for_sp" />
+        <option value="$PROJECT_DIR$/sentencepiece/generate_data_text8_for_sp.py" />
+        <option value="$PROJECT_DIR$/sentencepiece/sp_practice.py" />
+        <option value="$PROJECT_DIR$/data/Readme" />
+        <option value="$PROJECT_DIR$/sentencepiece/practice.py" />
+        <option value="$PROJECT_DIR$/sentencepiece/generate_sp_subword.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="18" />
+    <option name="y" value="52" />
+    <option name="width" value="1280" />
+    <option name="height" value="729" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="sentencepiece" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="subword-nmt" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/Visual_vector" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/QANet" />
+      <recent name="$PROJECT_DIR$/QANet/datasets" />
+      <recent name="$PROJECT_DIR$/QANet/datasets/glove" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.generate_sp_subword">
+    <configuration name="训练效果图" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot/训练效果图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_data_text8_for_sp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentencepiece" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentencepiece/generate_data_text8_for_sp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_sp_subword" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentencepiece" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentencepiece/generate_sp_subword.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentencepiece" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentencepiece/practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sp_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sentencepiece" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sentencepiece/sp_practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.generate_sp_subword" />
+        <item itemvalue="Python.practice" />
+        <item itemvalue="Python.sp_practice" />
+        <item itemvalue="Python.generate_data_text8_for_sp" />
+        <item itemvalue="Python.训练效果图" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4de9c501-2cb2-4eef-b3e3-b190b970265f" name="Default Changelist" comment="" />
+      <created>1590328949217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590328949217</updated>
+      <workItem from="1590328950539" duration="108467000" />
+      <workItem from="1590937290548" duration="16991000" />
+      <workItem from="1590998337586" duration="53991000" />
+      <workItem from="1591579220924" duration="24177000" />
+      <workItem from="1591778904161" duration="20751000" />
+      <workItem from="1592008173955" duration="7915000" />
+      <workItem from="1593449231992" duration="17805000" />
+      <workItem from="1593615593419" duration="6135000" />
+      <workItem from="1594089446398" duration="174000" />
+      <workItem from="1594265956375" duration="24984000" />
+      <workItem from="1594543071203" duration="4020000" />
+      <workItem from="1594565522642" duration="35381000" />
+      <workItem from="1599807750713" duration="9906000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="330697000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="18" y="52" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2552504" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32810047" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29827315" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49928468" weight="0.15662651" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.12715855" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.30645162" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.02173913" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.41033927" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584814" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39452055" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49928468" weight="0.15662651" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32465753" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.30645162" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.02173913" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plot/figure/pk.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot/figure/windowdiff.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/text8_words">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="588795">
+          <caret line="253853" column="7" selection-start-line="253853" selection-start-column="7" selection-end-line="253853" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="2960" column="17" lean-forward="true" selection-start-line="2960" selection-start-column="17" selection-end-line="2960" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/raw_word_vector_8">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/mikolov_analogy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18687" column="3" selection-start-line="18687" selection-start-column="3" selection-end-line="18687" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/temp_morpheme_analogy_old.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="231" column="13" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/dataset_bulid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lm/run_wordsimilarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="true" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/find_wordAnalogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/infer_word_vector_8c--topn_3_result.txt" />
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/infer_word_vector_8--topn_3_result.txt" />
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/infer_word_vector_8_1_result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-832" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/xsh/lib/python3.6/genericpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/run_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/get_all_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot/数据.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="149" column="1" selection-start-line="100" selection-end-line="149" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/analogy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="1125" column="8" lean-forward="true" selection-start-line="1125" selection-start-column="8" selection-end-line="1125" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot/figure/acc.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/temp_morpheme_analogy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subword-nmt/learn_bpe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="284" column="26" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="26" />
+          <folding>
+            <element signature="e#930#2710#0" />
+            <element signature="e#2757#3303#0" />
+            <element signature="e#3368#5848#0" />
+            <element signature="e#5887#6349#0" />
+            <element signature="e#6396#7144#0" />
+            <element signature="e#8501#9104#0" />
+            <element signature="e#9933#10033#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/word_analogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="141" column="86" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="86" />
+          <folding>
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="e#1419#3211#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subword-nmt/apply_bpe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="198" column="27" selection-start-line="198" selection-start-column="18" selection-end-line="198" selection-end-column="27" />
+          <folding>
+            <element signature="e#884#2255#0" />
+            <element signature="e#1047#1167#0" />
+            <element signature="e#1194#1241#0" />
+            <element signature="e#8976#9800#0" />
+            <element signature="e#9868#10594#0" />
+            <element signature="e#10645#10984#0" />
+            <element signature="e#11028#11755#0" />
+            <element signature="e#11967#12281#0" />
+            <element signature="e#12356#12522#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Visual_vector/bpe_word_vector_8">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-261" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/-1810239164/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4244" column="6" selection-start-line="4244" selection-start-column="6" selection-end-line="4244" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/all_result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="75" selection-start-line="51" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot/训练效果图.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Analogy/Data/morpheme_analogy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16909">
+          <caret line="1337" column="4" selection-start-line="1337" selection-start-column="4" selection-end-line="1337" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Visual_vector/infer_word_vector_8_no#">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="107">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Visual_vector/visualvectorinfer_word_vector_8_no#">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Visual_vector/visualword_infer_word_vector_8_no#">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lm/gennerate_visual_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/pre.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="1495" column="5" selection-start-line="1495" selection-end-line="1495" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/shuffle_practice.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/train.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-772" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/suff.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_data_for_sp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/text8">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="97">
+          <caret column="1280000" selection-start-column="1280000" selection-end-column="1280000" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/text8_for_sp">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-52597" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/generate_data_text8_for_sp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/sp_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lm/train_subword_extend_using_inference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#230#779#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/subword.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="1466">
+          <caret line="86503" column="3" lean-forward="true" selection-start-line="86503" selection-end-line="86503" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dev.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/bpe_subword.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-359">
+          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/m.vocab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-874978">
+          <caret line="1646" column="2" selection-start-line="1646" selection-end-line="1647" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subword-nmt/generate_bpe_subword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/text8_sp_result">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-4375">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentencepiece/generate_sp_subword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subword-nmt/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

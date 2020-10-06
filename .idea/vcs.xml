@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/QANet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cnn-text-classification-tf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/datastories-semeval2017-task4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/subword-nmt" vcs="Git" />
+  </component>
+</project>
