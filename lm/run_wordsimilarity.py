@@ -5,7 +5,7 @@ if __name__ == '__main__':
     parser.add_argument('--vector_dir')
     parser.add_argument('-o', '--output_path')
     args = parser.parse_args()
-    root_path = '/home/ubuntu/User/xsh/Paper/'
+    root_path = '/home/ubuntu/User/xsh/morpheme/'
 
     vector_directory_path =args.vector_dir+'word_vector_'
     similarity_py_path =root_path + 'en_embedding_similarity/all_wordsim.py'
